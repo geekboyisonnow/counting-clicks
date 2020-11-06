@@ -11,7 +11,13 @@ ptag.textContent = count;
 
 }
 
-const reset = () => {
+const reset = event => {
+  // const reset = (tacoTuesday) => {
+  // tacoTuesday.preventDefault()
+  
+  // Don't do default functionality that this even would have done in this case the right click
+  event.preventDefault()
+
   // Set the count to 0
   count = 0
 
@@ -41,8 +47,9 @@ const main = () => {
   button.addEventListener('click', counter)
   // MDN Right Click Event 'contextmenu'
   button.addEventListener('contextmenu', reset)
-  
 
+  // tell the p tag, any time you are clicked, call the reset function
+  ptag.addEventListener('click', reset)
 }
 
 
