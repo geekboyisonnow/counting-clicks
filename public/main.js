@@ -1,13 +1,13 @@
 let count = 0;
 
 const counter = () => {
-// The function does this:
-// increment the value of count
-count = count + 1
+  // The function does this:
+  // increment the value of count
+  count = count + 1
 
-// change the p tag to show what is inside the variable count
-const ptag = document.querySelector('p')
-ptag.textContent = count;
+  // change the p tag to show what is inside the variable count
+  const ptag = document.querySelector('p')
+  ptag.textContent = count;
 
 }
 
@@ -51,12 +51,5 @@ const main = () => {
   // tell the p tag, any time you are clicked, call the reset function
   ptag.addEventListener('click', reset)
 }
-
-
-// function main() {
-//   if (document.querySelector('h1.hello-world')) {
-//     document.querySelector('h1.hello-world').textContent = 'Hello, World!'
-//   }
-// }
 
 document.addEventListener('DOMContentLoaded', main)
