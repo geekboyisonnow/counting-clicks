@@ -11,6 +11,15 @@ ptag.textContent = count;
 
 }
 
+const reset = () => {
+  // Set the count to 0
+  count = 0
+
+  // Change the p tag to show what is inside the variable count
+  const ptag = document.querySelector('p')
+  ptag.textContent = count
+}
+
 const main = () => {
   // write all our code here inside the main
 
@@ -30,7 +39,8 @@ const main = () => {
   // - tell the button any time you are clicked, call a function
   // ...
   button.addEventListener('click', counter)
-  // button.addEventListener('mousemove', counter)
+  // MDN Right Click Event 'contextmenu'
+  button.addEventListener('contextmenu', reset)
   
 
 }
