@@ -26,12 +26,13 @@ const main = () => {
   const button = document.querySelector('button')
   console.log(button)
 
-  counter()
+  // counter()
   // - tell the button any time you are clicked, call a function
   // ...
+  button.addEventListener('click', counter)
+  // button.addEventListener('mousemove', counter)
   
-  
-  // document.querySelector('h1').textContent += '?'
+
 }
 
 
